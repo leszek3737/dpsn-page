@@ -33,7 +33,48 @@ body  {
     transform: skewY(-10deg );
     padding-top: 50px ;
 }
+.hamburger {
+    
+}
+.about {
+    background-color: white;
+    padding: 0;
+    margin-right: 15px;
+    margin-left: 15px;
+}
 
 @media only screen and (max-width: 40em) {
     
+}
+
+.logo {
+    width: 50px; 
+}
+
+.increaseLatters, .reducingLatters {
+position: absolute;
+    margin: 0;
+    padding: 0; 
+    background-color: transparent;
+    border: 0
+}
+.increaseLatters{
+    margin-left: 20%;
+}
+.reducingLatters{
+    margin-left: 40%
+}
+
+
+
+
+
+.container.navbar-header.nav {
+       margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+}
+
+.container-fluid.nav {
+    padding: 0;
 }
