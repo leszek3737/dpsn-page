@@ -1,3 +1,39 @@
+html {
+	font-size: 62,5%; /*dostosowanie do tego by 0,1 rem był jak 1px*/
+	    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    margin: auto;
+    
+}
+body  {
+    background-color: #212122;
+}
 #zdj{
     width: 200px;
+}
+.container-fluid
+ {
+    background-color: white;
+}
+
+.grw article{
+    background-color: white;
+    height: 200px;
+/*    transform: rotate(9deg);*/
+    transform: skewY( 5deg );
+    margin: 0;
+    padding: 0;
+    background-size: 300px 100px;
+}
+}
+.grw article h1{
+/*    transform:rotate(-9deg);*/
+    transform: skewY(-10deg );
+    padding-top: 50px ;
+}
+
+@media only screen and (max-width: 40em) {
+    
 }
