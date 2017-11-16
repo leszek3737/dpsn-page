@@ -1,67 +1,92 @@
 html {
-	font-size: 62,5%; /*dostosowanie do tego by 0,1 rem był jak 1px*/
-	    top: 0; 
-    right: 0; 
-    bottom: 0; 
-    left: 0; 
+    font-size: 62, 5%;
+    /*dostosowanie do tego by 0,1 rem był jak 1px*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     margin: auto;
-    
+
 }
-body  {
+
+body {
     background-color: #212122;
 }
-#zdj{
+
+#zdj {
     width: 200px;
 }
-.container-fluid
- {
+
+.container-fluid {
     background-color: white;
 }
 
-.grw article{
+.grw article {
     background-color: white;
     height: 200px;
-/*    transform: rotate(9deg);*/
-    transform: skewY( 5deg );
+    /*    transform: rotate(9deg);*/
+    transform: skewY( 3deg);
     margin: 0;
     padding: 0;
     background-size: 300px 100px;
 }
-}
-.grw article h1{
+
+
+
+.grw h1 {
 /*    transform:rotate(-9deg);*/
-    transform: skewY(-10deg );
-    padding-top: 50px ;
+    transform: skewY( -3deg);
+    text-align: center;
+    padding-top: 5%;
+    font-size: 3rem;
 }
+
 .hamburger {
     
 }
+
 .about {
     background-color: white;
     padding: 0;
     margin-right: 15px;
     margin-left: 15px;
+    transform: skewY(3deg)
 }
-
-@media only screen and (max-width: 40em) {
+.about article {
+    transform: skewY(-3deg)
+}
+.news {
+     background-color: white;
+    padding: 0;
+    margin: 15px;
+    margin-bottom: 0px;
+    transform: skewY(3deg)
+}
+.news h4, .news p, .news img {
+     transform: skewY(-3deg);
     
 }
 
+@media only screen and (max-width: 40em) {}
+
 .logo {
-    width: 50px; 
+    width: 50px;
 }
 
-.increaseLatters, .reducingLatters {
-position: absolute;
+.increaseLatters,
+.reducingLatters {
+    position: absolute;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     background-color: transparent;
     border: 0
 }
-.increaseLatters{
+
+.increaseLatters {
     margin-left: 20%;
 }
-.reducingLatters{
+
+.reducingLatters {
     margin-left: 40%
 }
 
@@ -70,7 +95,7 @@ position: absolute;
 
 
 .container.navbar-header.nav {
-       margin-left: 10%;
+    margin-left: 10%;
     margin-right: 10%;
     padding: 0;
 }
