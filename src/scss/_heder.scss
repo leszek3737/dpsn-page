@@ -1,7 +1,16 @@
-
 heder {
-    .container-fluid {
-        background: white;
+    position: relative;
+    .site-branding {
         text-align: center;
+        
+        &:before {
+            content: "";
+            background: white;
+            width: 100%;
+            height: 1000%;
+            position: absolute;
+            z-index: -2;
+
+        }
     }
 }
