@@ -1,0 +1,42 @@
+.news {
+    margin-top: 20px;
+    .row {
+        article {
+            margin-top: 200px;
+            position: relative;
+            div {
+                padding-top: 50px;
+                position: relative;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                background: yellow;
+                width: 90%;
+                height: 120%;
+                z-index: -2;
+                transform: skewY(3deg);
+                border: {
+                    top: 50px solid #F34A53;
+                    right: solid transparent;
+                    right-width: 100px;
+                }
+           
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                height: 30%;
+                width: 10%;
+                right: 0;
+                border-top: 50px solid white;
+                border-left: solid transparent;
+                border-left-width: 100px;
+                margin: 25px auto 0;
+
+            }
+        }
+
+    }
+
+}

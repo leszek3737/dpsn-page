@@ -4,10 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>Dom pomocy społecnej</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-theme.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="bootstrap-theme.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- endbuild -->
 </head>
 
 <body>
@@ -56,15 +59,19 @@
                     <li> <input type="search" placeholder="Szukaj">
                     </li>
                 </ul>
-                <input type="search" placeholder="Szukaj">
+                
             </div>
 
         </div>
     </nav>
-    <heder class="container grw">
-        <article>
-            <h1>Dom Pomocy Społecznej dla Osób Niepełnosprawnych Fizycznie</h1>
-        </article>
+    <heder class="site-header">
+        <div class="container-fluid">
+           <div class="site-branding">
+               <h1 class="site-title">Dom Pomocy Społecznej dla Osób Niepełnosprawnych Fizycznie</h1>
+           </div>
+        </div>
+            
+        
 
     </heder>
     <section class="container about">
@@ -76,35 +83,47 @@
                 <p> Mieszkańcami Domu są przede wszystkim dorosłe osoby niepełnosprawne fizycznie, cierpiące na stwardnienie rozsiane (SM), dystrofię mięśniową, niesprawności będących następstwem mechanicznych uszkodzeń kręgołupa, mózgowego porażenia dziecięcego lub udarów mózgu. Mieszkańcy mają możliwość korzystania z terapii zajęciowej, rehabilitacji wspomagającej, kaplicy, kuchenki pomocniczej.</p>
         </article>
     </section>
-    <section class="container">
+    <section class="container news">
         <div class="row">
-            <article class="col-xs-12 col-sm-6 col-lg-4 news">
+            <article class="col-xs-12 col-sm-6 col-lg-4">
+                <div>
                 <h4>Podziękowania od rodziny naszej mieszkanki </h4>
                 <figure>
                     <img src="http://dpsn.lublin.eu/zdj/tlumaczenie.jpg" id="zdj">
-                    
+
                 </figure>
+                </div>
             </article>
-            <article class="col-xs-12 col-sm-6 col-lg-4 news">
+            <article class="col-xs-12 col-sm-6 col-lg-4">
+                <div>
                 <h4>Minister Rodziny, Pracy i Polityki Społecznej</h4>
                 <p>
                     Minister Rodziny, Pracy i Polityki Społecznej Elżbieta Rafalska 23 listopada wręczyła nagrody i wyróżnienia, przyznawane za wybitne, nowatorskie rozwiązania w pomocy społecznej. Nagrody przyznawane są każdego roku, z okazji Dnia Pracownika Socjalnego, obchodzonego 21 listopada.
                 </p>
+                  <p>
+                    Minister Rodziny, Pracy i Polityki Społecznej Elżbieta Rafalska 23 listopada wręczyła nagrody i wyróżnienia, przyznawane za wybitne, nowatorskie rozwiązania w pomocy społecznej. Nagrody przyznawane są każdego roku, z okazji Dnia Pracownika Socjalnego, obchodzonego 21 listopada.
+                </p>
+                </div>
             </article>
-            <article class="col-xs-12 col-sm-6 col-lg-4 news">
+            
+            <article class="col-xs-12 col-sm-6 col-lg-4">
+                <div>
                 <h4>Poranki muzyczne</h4>
                 <p>W ramach cotygodniowych Poranków muzycznych, w każdy piątek o godzinie 11.30 odbywają się u nas koncerty muzyki poważnej. W programie spotkań przedstawiamy słuchaczom utwory kompozytorów wszystkich epok od wczesnego baroku po muzykę współczesną </p>
+                </div>
             </article>
         </div>
     </section>
-
     <footer class="container">
         copyright © 2017
     </footer>
-
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- build:js -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js2 -->
     <script src="js/main.js"></script>
+        <!-- endbuild -->
 </body>
 
 </html>

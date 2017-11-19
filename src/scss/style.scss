@@ -1,0 +1,22 @@
+@import "settings";
+@import "news";
+@import "about";
+@import "heder";
+@import "footer";
+@import "nav";
+
+html {
+    font-size: 62.5%;
+    /*dostosowanie do tego by 0,1 rem był jak 1px*/
+    body {
+        background-color: $colorBackGround;
+    }
+}
+
+
+}
+
+img {
+    width: 200px;
+}
+
