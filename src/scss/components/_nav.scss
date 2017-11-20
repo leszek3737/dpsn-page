@@ -59,7 +59,8 @@
          width: $logoSizeXS;
          background: $logoBackGround;
          border-radius: 50%;
-         margin-left: 30%;
+         margin-left: 10%;
+         margin-top: 10px;
      }
  }
 
@@ -160,8 +161,6 @@
  }
 
 
-
-
  @media (min-width: 768px) {
 
      .logo {
@@ -196,8 +195,6 @@
      &::before {
          display: none;
      }
-
-
      li {
         float:left;
          width:auto;
@@ -213,11 +210,14 @@
    
      input {
          position: absolute;
-         right: -30px;
-         width: auto;
+         right: 2%;
+         width: 125px;
          height: 22px;
          padding-left: 0%;
-         border-color: white;
+         border: {
+             color: white;
+             width: 3px;
+         }
 
      }
  }
