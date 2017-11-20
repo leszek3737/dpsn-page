@@ -2,10 +2,21 @@
 .navbar-default{
     background: none;
     border: none;
+    box-shadow: none;
     button {
+        box-shadow: none;
         border: none;
         background: none;
         text-shadow: none;
+    }
+    input {
+        box-shadow: none;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1 px solid black;
+    }
+    a {
+        box-shadow: none;
     }
 }
 
