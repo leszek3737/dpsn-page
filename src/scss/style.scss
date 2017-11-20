@@ -1,9 +1,9 @@
 @import "settings";
-@import "news";
-@import "about";
-@import "heder";
-@import "footer";
-@import "nav";
+@import "layout/news";
+@import "layout/about";
+@import "components/heder";
+@import "components/footer";
+@import "components/nav";
 
 html {
     font-size: 62.5%;
@@ -11,6 +11,7 @@ html {
     body {
         background-color: $colorBackGround;
     }
+
 
     
 
