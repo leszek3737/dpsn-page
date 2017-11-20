@@ -20,7 +20,7 @@
      z-index: 2;
      border-top: 3px solid $colorHamburer;
      position: absolute;
-     transition: 0.3s transform linear;
+     transition: 0.5s transform linear;
      &::before,
      &:after {
          content: "";
