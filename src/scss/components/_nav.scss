@@ -1,181 +1,225 @@
-heder {
-    position: absolute;
-    width: 100%;
-    button {
-        background: transparent;
-        color: white;
-        border: 0;
-        margin: 0;
-    }
+ heder {
+     position: absolute;
+     width: 100%;
+     button {
+         background: transparent;
+         color: white;
+         border: 0;
+         margin: 0;
+     }
+ }
 
-}
+ .hamburger {
+     margin: 20px;
+     margin-right: 10%;
+     display: block;
+     left: auto;
+     right: 1px;
+     width: 24px;
+     height: 21px;
+     z-index: 2;
+     border-top: 3px solid $colorHamburer;
+     position: absolute;
+     transition: 0.3s transform linear;
+     &::before,
+     &:after {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         border-top: 3px solid $colorHamburer;
+         transform: translateY(7.5px);
+     }
+     &::before {}
+     &::after {
+         transform: translateY(18px);
+     }
+     &:focus {
+         transform: rotate(45deg);
 
-.logo {
-    top: 10px;
-    z-index: 2;
-    img {
-        height: $logoSizeSM;
-        width: $logoSizeSM;
-        background: $logoBackGround;
-        border-radius: 50%;
-        margin-left: 30%;
+         border: none;
+         &::after {
+             transform: rotate(90deg) translateX(8px);
+             border-color: darken($colorHamburer, 40);
+         }
+         &::before {
+             border-color: darken($colorHamburer, 40);
+         }
+     }
+     &:focus ~ .site-menu {
+         transform: translateY(400px);
+     }
 
-    }
+ }
 
-}
+ .logo {
+     img {
+         height: $logoSizeXS;
+         width: $logoSizeXS;
+         background: $logoBackGround;
+         border-radius: 50%;
+         margin-left: 30%;
+     }
+ }
 
-.hamburger {
+ .site-nav {
+     z-index: 1;
+     width: 100%;
+     height: 300px;
+     position: absolute;
+     padding: 0;
 
-    display: none;
-}
+ }
 
+ .site-menu {
+     z-index: 1;
+     position: absolute;
+     top: -400px;
+     padding-top: 60px;
+     width: 100%;
+     height: 100%;
+     transition: 0.3s transform ease-in-out;
+     &::before {
+         background: $colorMenu;
+         content: "";
+         width: 100%;
+         height: 120%;
+         position: absolute;
+         z-index: -2;
+         transform: skewY(3deg) translateY(-100px);
+     }
 
-@media all and (max-width: 768px) {
-    .hamburger {
-        margin: 20px;
-        margin-right: 10%;
-        display: block;
-        left: auto;
-        right: 1px;
-        width: 24px;
-        height: 21px;
-        z-index: 2;
-        border-top: 3px solid $colorHamburer;
-        position: absolute;
-        transition: 0.3s transform linear;
-        &::before,
-        &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            border-top: 3px solid $colorHamburer;
-            transform: translateY(7.5px);
-        }
-        &::before {}
-        &::after {
-            transform: translateY(18px);
-        }
-        &:focus {
-            transform: rotate(45deg);
-           
-            border: none;
-            &::after {
-                transform: rotate(90deg) translateX(8px);
-                 border-color: darken($colorHamburer, 40);
-            }
-            &::before {
-                 border-color: darken($colorHamburer, 40);
-            }
-        }
-        &:focus ~ .site-menu {
-            transform: translateY(400px);
-        }
+     ul {
+         padding: 0;
+         list-style-type: none;
+         margin: 0;
+     }
+     li {
 
-    }
-    
-    .logo {
-        img {
-            height: $logoSizeXS;
-            width: $logoSizeXS;
-        }
-    }
+         display: flex;
+         justify-content: center;
+         width: 100%;
+         box-sizing: border-box;
+         margin: 0;
 
-    .site-nav {
-        z-index: 1;
-        width: 100%;
-        height: 300px;
-        position: absolute;
-        padding: 0;
-
-    }
-
-    .site-menu {
-        z-index: 1;
-        position: absolute;
-        top: -400px;
-        padding-top: 60px;
-        width: 100%;
-        height: 100%;
-        transition: 0.3s transform ease-in-out;
-        &::before {
-            background: $colorMenu;
-            content: "";
-            width: 100%;
-            height: 120%;
-            position: absolute;
-            z-index: -2;
-            transform: skewY(3deg) translateY(-100px);
-        }
-
-        ul {
-            padding: 0;
-            list-style-type: none;
-            margin: 0;
-        }
-        li {
-
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            box-sizing: border-box;
-            margin: 0;
-
-        }
-        a,
-        input {
-            display: flex;
-            justify-content: center;
-            color: $colorBackGround;
-            margin: 10px;
-            width: 30%;
-            height: 100%;
-            text-decoration: none;
-            box-sizing: border-box;
-            background-color: white;
-            border: 2px solid {
-                radius: 10px;
-            }
+     }
+     a,
+     input {
+         display: flex;
+         justify-content: center;
+         color: $colorBackGround;
+         margin: 10px;
+         width: 30%;
+         height: 100%;
+         text-decoration: none;
+         box-sizing: border-box;
+         background-color: white;
+         border: 2px solid {
+             radius: 10px;
+         }
 
 
-        }
-        input {
-            background-color: transparent;
-            border: {
-                top: 0;
-                right: 0;
-                color: black;
-                left: 0;
-                radius: 0;
-            }
+     }
+     input {
+         background-color: transparent;
+         border: {
+             top: 0;
+             right: 0;
+             color: black;
+             left: 0;
+             radius: 0;
+         }
 
-        }
-    }
+     }
+ }
 
-    .changeLatters {
-        z-index: 1;
-        height: 50px;
-        font: {
-            family: $mainFont;
-            size: 24px;
-            weight: bold;
-        }
+ .changeLatters {
+     z-index: 1;
+     height: 50px;
+     font: {
+         family: $mainFont;
+         size: 22px;
+         weight: bold;
+     }
 
 
-    }
+ }
 
-    #reducingLatters {
-        font-size: 18px;
-        text-align: left;
-        height: 100%;
-        color: $colorChangeLatters;
-    }
+ #reducingLatters {
+     font-size: 18px;
+     text-align: left;
+     height: 100%;
+     color: $colorChangeLatters;
+ }
 
-    #increaseLatters {
-        text-align: right;
-        height: 100%;
-        color: $colorChangeLatters;
-    }
+ #increaseLatters {
+     text-align: right;
+     height: 100%;
+     color: $colorChangeLatters;
+ }
 
-}
+
+
+
+ @media (min-width: 768px) {
+
+     .logo {
+         top: 10px;
+         z-index: 2;
+         img {
+             height: $logoSizeSM;
+             width: $logoSizeSM;
+         }
+     }
+     
+     .changeLatters {
+         position: absolute;
+         right: 0;
+         top: 60px;
+     }
+
+     .hamburger {
+         display: none;
+     }
+     
+     .site-nav {
+     height: 50px;
+     position: static;
+ }
+
+ .site-menu {
+     top: 0px;
+     padding-top: 0px;
+     display: flex;
+     justify-content: center;
+     &::before {
+         display: none;
+     }
+
+
+     li {
+        float:left;
+         width:auto;
+     }
+     a,
+     input {
+         color: white; /// !!!!
+         margin: 20px;
+         width: auto;
+         background-color: transparent;;
+         border: 0;
+     }
+   
+     input {
+         position: absolute;
+         right: -30px;
+         width: auto;
+         height: 22px;
+         padding-left: 0%;
+         border-color: white;
+
+     }
+ }
+
+ }
