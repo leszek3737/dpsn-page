@@ -6,7 +6,7 @@
     <title>Dom pomocy społecnej</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- build:css -->
-    <link rel="stylesheet" href="bootstrap-theme.css">
+   <link rel="stylesheet" href="bootstrap-theme.css">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -15,99 +15,117 @@
 
 
 <body>
-
-    <heder class="container-fluid">
-        <div class="row">
-            <div class="logo col-sm-2 col-xs-2">
-                <img src="img/dpslogo4.svg" alt="">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header  navbar-left">
+                <a class="navbar-brand logo" href="#">
+                    <img alt="Brand" src="img/dpslogo4.svg">
+                </a>
             </div>
-            <nav class="site-nav col-xs-2 col-sm-10">
-                <button class="hamburger"></button>
-                <div class="site-menu">
-                    <ul>
-                        <li>
-                            <a href="onas.html" title="">
+            <div class="navbar-right ">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="onas.html" title="">
 								O Nas
 							</a>
-                        </li>
-                        <li>
-                            <a href="mid.html">
+                    </li>
+                    <li>
+                        <a href="mid.html">
 							Mapa i Dojazd
 						</a>
-                        </li>
-                        <li>
-                            <a href="opinie.html">
+                    </li>
+                    <li>
+                        <a href="opinie.html">
 								Opinie
 						</a>
-                        </li>
-                        <li>
-                            <a href="http://bip.lublin.eu/bip/dpsn/">
+                    </li>
+                    <li>
+                        <a href="http://bip.lublin.eu/bip/dpsn/">
 							BIP
 						</a>
-                        </li>
-                        <li>
-                            <a href="Kontakt.html">
+                    </li>
+                    <li>
+                        <a href="Kontakt.html">
 								Kontakt
 						</a>
-                        </li>
-                        <li> <input type="search" placeholder="Szukaj">
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="changeLatters col-xs-8 col-sm-3">
-                <button id="increaseLatters" class="col-xs-6 col-sm-6">A +</button>
-                <button id="reducingLatters" class="col-xs-6 col-sm-6">A -</button>
+                    </li>
+                    <li><form class="navbar-form ">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default glyphicon glyphicon-search" id="glyphicon glyphicon-search"></button>
+                    
+                </form>
+                </li>
+                </ul>
+                
+            </div>
+
+
+        </div>
+        <div class="container-fluid">
+            <div class="navbar-header navbar-right">
+                <button type="button" class="btn btn-default navbar-btn" id="increaseLatters">A +</button>
+                <button type="button" class="btn btn-default navbar-btn" id="reducingLatters">A -</button>
+                <button type="button" class="navbar-toggle collapsed">
+           <span class="sr-only"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span> 
+           <span class="icon-bar"></span> 
+       </button>
             </div>
         </div>
-    </heder>
-    <div class="heder">
-        <div class="container-fluid">
+    </nav> 
+    <div class="container-fluid heder">
             <div class="site-branding">
                 <h2 class="site-title">Dom Pomocy Społecznej <br/> dla Osób <br/>Niepełnosprawnych Fizycznie</h2>
             </div>
         </div>
-    </div>
-    <section class="container-fluid about">
-        <div class="row">
-            <article lass="col-12">
+    <section class="container about">
+        <article>
                 <h3>O domu</h3>
-                <img src="" alt="">
                 <p>Dom Pomocy Społecznej dla Osób Niepełnosprawnych Fizycznie prowadzony jest przez Gminę Lublin. Położony jest w dzielnicy Kośminek w południowo - wschodniej części Lublina. Liczy 100 miejsc w pokojach dwuosobowych rozmieszczonych na czterech kondygnacjach. Każdy z pokoi wyposażony jest w pełen węzeł sanitarny. Nasi mieszkańcy mają do dyspozycji 3 windy, którymi mogą przemieszczać się pomiędzy kondygnacjami. Mieszkańcami Domu są przede wszystkim dorosłe osoby niepełnosprawne fizycznie, cierpiące na stwardnienie rozsiane (SM), dystrofię mięśniową, niesprawności będących następstwem mechanicznych uszkodzeń kręgołupa, mózgowego porażenia dziecięcego lub udarów mózgu. Mieszkańcy mają możliwość korzystania z terapii zajęciowej, rehabilitacji wspomagającej, kaplicy, kuchenki pomocniczej.</p>
             </article>
-        </div>
     </section>
-    <section class="container-fluid news">
+    <section class="container news">
         <div class="row">
-            
-            <article class="col-xs-12 col-sm-6 col-lg-4">
-                
-                    <h4>Podziękowania od rodziny naszej mieszkanki </h4>
-                    <figure>
-                        <img src="http://dpsn.lublin.eu/zdj/tlumaczenie.jpg" id="zdj">
+            <article class="col-xs-12 col-sm-6 col-lg-3">
 
-                    </figure>
-                
+                <h4>Podziękowania od rodziny naszej mieszkanki </h4>
+                <figure>
+                    <img src="http://dpsn.lublin.eu/zdj/tlumaczenie.jpg" id="zdj">
+
+                </figure>
+
             </article>
-            <article class="col-xs-12 col-sm-6 col-lg-4">
-                
-                    <h4>Minister Rodziny, Pracy i Polityki Społecznej</h4>
-                    <p>
-                        Minister Rodziny, Pracy i Polityki Społecznej Elżbieta Rafalska 23 listopada wręczyła nagrody i wyróżnienia, przyznawane za wybitne, nowatorskie rozwiązania w pomocy społecznej. Nagrody przyznawane są każdego roku, z okazji Dnia Pracownika Socjalnego, obchodzonego 21 listopada.
-                    </p>
-                    <p>
-                        Minister Rodziny, Pracy i Polityki Społecznej Elżbieta Rafalska 23 listopada wręczyła nagrody i wyróżnienia, przyznawane za wybitne, nowatorskie rozwiązania w pomocy społecznej. Nagrody przyznawane są każdego roku, z okazji Dnia Pracownika Socjalnego, obchodzonego 21 listopada.
-                    </p>
-<!--                   <button>Czytaj Więcej</button>-->
-                
+            <article class="col-xs-12 col-sm-6 col-lg-3">
+
+                <h4>Minister Rodziny, Pracy i Polityki Społecznej</h4>
+                <p>
+                    Minister Rodziny, Pracy i Polityki Społecznej Elżbieta Rafalska 23 listopada wręczyła nagrody i wyróżnienia, przyznawane za wybitne, nowatorskie rozwiązania w pomocy społecznej. Nagrody przyznawane są każdego roku, z okazji Dnia Pracownika Socjalnego, obchodzonego 21 listopada.
+                </p>
+                <p>
+                    Minister Rodziny, Pracy i Polityki Społecznej Elżbieta Rafalska 23 listopada wręczyła nagrody i wyróżnienia, przyznawane za wybitne, nowatorskie rozwiązania w pomocy społecznej. Nagrody przyznawane są każdego roku, z okazji Dnia Pracownika Socjalnego, obchodzonego 21 listopada.
+                </p>
+                <!--                   <button>Czytaj Więcej</button>-->
+
+            </article>          
+            <article class="col-xs-12 col-sm-6 col-lg-3">
+
+                <h4>Poranki muzyczne</h4>
+                <p>W ramach cotygodniowych Poranków muzycznych, w każdy piątek o godzinie 11.30 odbywają się u nas koncerty muzyki poważnej. W programie spotkań przedstawiamy słuchaczom utwory kompozytorów wszystkich epok od wczesnego baroku po muzykę współczesną </p>
+
             </article>
-            <article class="col-xs-12 col-sm-12 col-lg-4">
-               
-                    <h4>Poranki muzyczne</h4>
-                    <p>W ramach cotygodniowych Poranków muzycznych, w każdy piątek o godzinie 11.30 odbywają się u nas koncerty muzyki poważnej. W programie spotkań przedstawiamy słuchaczom utwory kompozytorów wszystkich epok od wczesnego baroku po muzykę współczesną </p>
-                
+            <article class="col-xs-12 col-sm-6 col-lg-3">
+
+                <h4>Minister Rodziny, Pracy i Polityki Społecznej</h4>
+                <p>
+                    Minister Rodziny, Pracy i Polityki Społecznej Elżbieta Rafalska 23 listopada wręczyła nagrody i wyróżnienia, przyznawane za wybitne, nowatorskie rozwiązania w pomocy społecznej. Nagrody przyznawane są każdego roku, z okazji Dnia Pracownika Socjalnego, obchodzonego 21 listopada.
+                </p>
+                <p>
+                    Minister Rodziny, Pracy i Polityki Społecznej Elżbieta Rafalska 23 listopada wręczyła nagrody i wyróżnienia, przyznawane za wybitne, nowatorskie rozwiązania w pomocy społecznej. Nagrody przyznawane są każdego roku, z okazji Dnia Pracownika Socjalnego, obchodzonego 21 listopada.
+                </p>
             </article>
-            
         </div>
     </section>
     <footer class="container-fluid">

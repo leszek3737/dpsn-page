@@ -1,52 +1,20 @@
 .about {
-
-    div {
-        position: relative;
-        margin-top: 50px;
-        padding-top: 50px;
-        article {
-            padding: 10%;
-            &::before {
-                content: "";
-                position: absolute;
-                background: $articleBackGround;
-                width: 80%;
-                height: 80%;
-                z-index: -2;
-                transform: skewY(3deg);
-            }
+    margin-bottom: 100px;
+    position: relative;
+    padding: 0;
+    article {
+        height: 120%;
+        &::before {
+            content: "";
+            position: absolute;
+            background: $articleBackGround;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            transform: skewY(3deg);
         }
     }
     h3 {
-        margin: 0;
-        margin-top: 10px;
-        padding-top: 5px;
-        border-bottom: 2px solid;
+        border-bottom: 2px solid black;;
     }
-    p {
-        padding: {
-            left: 3%;
-            right: 3%;
-        }
-    }
-
-}
-
-@media (min-width:769px) {
-    .about {
-
-        div {
-
-            article {
-
-                &::before {
-                    height: 70%;
-                }
-            }
-        }
-        h3 {}
-        p {}
-    }
-
-
 }

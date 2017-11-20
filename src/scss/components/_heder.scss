@@ -1,6 +1,6 @@
 .heder {
-    padding-top: 100px;
-    display: flex;
+    position: relative;
+   top: -40px;
     width: 100%;
     height: 300px;
 
@@ -28,24 +28,3 @@
             transform: skewY(3deg);
         }
     }
-
-@media all and (max-width: 768px) {
-    .heder {
-    padding-top: 50px;
-    
-}
-    .site-branding {
-        width: 100%;
-        height: 300px;
-        left: 0;
-        position: absolute;
-
-        h2 {
-            margin-top: 75px;
-          
-
-        }
-        
-    }
-    
-}
