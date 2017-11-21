@@ -6,9 +6,9 @@
 @import "components/nav";
 
 html {
-    font-size: 62.5%;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%; 
     /*dostosowanie do tego by 0,1 rem był jak 1px*/
+    font-family: 'Open Sans', sans-serif;
     body {
         background-color: $colorBackGround;
     }

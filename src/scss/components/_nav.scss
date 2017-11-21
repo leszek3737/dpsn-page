@@ -1,8 +1,16 @@
-
-.navbar-default{
+.navbar-default {
     background: none;
     border: none;
     box-shadow: none;
+    form {
+        border:0;
+        margin:{
+        top:0;
+        bottom: 0;};
+        padding:{
+        top:0;
+        bottom: 0;};
+    }
     button {
         box-shadow: none;
         border: none;
@@ -10,22 +18,43 @@
         text-shadow: none;
     }
     input {
+        padding: 0;
+        height: 20px;
+        margin-top: 6px;
         box-shadow: none;
         background-color: transparent;
-        border: 0;
-        border-bottom: 1 px solid black;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid black;
+        color:$colorMenu;
+        &::placeholder {
+            color: $colorMenu;
+        }
     }
+    
+}
+
+.navbar-default .navbar-nav {
+    li{
     a {
+        text-decoration: none;
         box-shadow: none;
+        color: $colorMenu;
+        padding: 0;
+        margin: 15px;
+        border-bottom: 1px solid black;
+    }
+}
+}
+
+
+
+.logo {
+    img {
+        height: $logoSizeXS;
+        width: $logoSizeXS;
+        background: $logoBackGround;
+        border-radius: 50%;
     }
 }
 
-.logo {
-     img {
-         height: $logoSizeXS;
-         width: $logoSizeXS;
-         background: $logoBackGround;
-         border-radius: 50%;
-     }
- }
- 
