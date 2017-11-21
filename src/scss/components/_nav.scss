@@ -33,7 +33,11 @@
     }
     
 }
-
+.dropdown-menu {
+    background: none;
+    border: none;
+    
+}
 .navbar-default .navbar-nav {
     li{
     a {
@@ -58,3 +62,8 @@
     }
 }
 
+@media all and(min-width: 767px) {
+    .navbar-header.navbar-right.latters {
+      position: absolute;  
+    }
+}
