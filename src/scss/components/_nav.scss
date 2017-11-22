@@ -3,58 +3,79 @@
     border: none;
     box-shadow: none;
     form {
-        border:0;
-        margin:{
-        top:0;
-        bottom: 0;};
-        padding:{
-        top:0;
-        bottom: 0;};
+        border: 0;
+        margin: {
+            top: 0;
+            bottom: 0;
+        }
+        ;
+        padding: {
+            top: 0;
+            bottom: 0;
+        }
+        ;
     }
     button {
+        z-index: 2;
         box-shadow: none;
         border: none;
         background: none;
         text-shadow: none;
     }
-    input {
+    .navbar-form {
         padding: 0;
+        margin-top: 10px;
+    }
+    .form-control.search {
+
+        padding: 0;
+        width: 100px;
         height: 20px;
-        margin-top: 6px;
         box-shadow: none;
         background-color: transparent;
         border: none;
         border-radius: 0;
-        border-bottom: 1px solid black;
-        color:$colorMenu;
+        border-bottom: 1px solid $menuBorderBottom;
+        color: $colorMenu;
         &::placeholder {
             color: $colorMenu;
+
         }
     }
-    
+
 }
+
+
+
 .dropdown-menu {
-    background: none;
+    background: $colorDropMenu;
     border: none;
-    
+
 }
+
+.navbar-default .navbar-nav li a {
+    color: black;
+}
+
 .navbar-default .navbar-nav {
-    li{
-    a {
-        text-decoration: none;
-        box-shadow: none;
-        color: $colorMenu;
-        padding: 0;
-        margin: 15px;
-        border-bottom: 1px solid black;
+    li {
+        a {
+            text-decoration: none;
+            box-shadow: none;
+            color: $colorMenu;
+            padding: 0;
+            margin: 15px;
+            border-bottom: 1px solid $menuBorderBottom;
+
+        }
     }
-}
 }
 
 
 
 .logo {
     img {
+        z-index: 2;
         height: $logoSizeXS;
         width: $logoSizeXS;
         background: $logoBackGround;
@@ -62,8 +83,44 @@
     }
 }
 
-@media all and(min-width: 767px) {
-    .navbar-header.navbar-right.latters {
-      position: absolute;  
+@media all and(max-width: 767px) {
+    .navbar-default .navbar-collapse {
+        border: 0;
     }
+    .navbar-collapse {
+        box-shadow: 0;
+    }
+    .navbar-collapse.in {
+        overflow-y: hidden;
+    }
+        .latters {
+            display: flex;
+            justify-content: center;
+            transform: translatey(-50px)
+        }
+     .navbar-form {
+        padding: 20px;
+    }
+    .nav.navbar-nav.m1{
+        &::before{ display: none;
+            
+        }
+    }
+        .form-control.search {
+           
+            position: relative;
+            padding: 0;
+            width: auto;
+            height: 20px;
+            box-shadow: none;
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid $menuBorderBottom;
+            color: $colorMenu;
+            &::placeholder {
+                color: $colorMenu;
+    
+            }
+        }
 }
