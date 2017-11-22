@@ -1,0 +1,38 @@
+.news {
+    position: relative;
+    div {
+        margin-bottom: 70px;
+    }
+    article {
+        &::after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-image: url(/src/img/dpslogo4.svg) no-repeat top left;
+            background-size: contain;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            background: $articleBackGround;
+            width: 96%;
+            height: 100%;
+            z-index: -2;
+            transform: skewY(3deg);
+        }
+        h4 {
+            border-bottom: 1px solid black;
+        }
+
+
+    }
+}
+
+.readNext {
+
+    height: 100%;
+    width: 100%;
+    background-color: red;
+
+}
