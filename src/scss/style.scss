@@ -1,16 +1,19 @@
-@import "settings";
-@import "layout/news";
-@import "layout/about";
-@import "components/heder";
-@import "components/footer";
-@import "components/nav";
-
+// moduły z botstrap 
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'settingsBootstrap';
+//wczytanie lokalnych
+@import 'settings';
+@import 'layout/news';
+@import 'layout/about';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/nav';
 html {
-    font-size: 62.5%; 
-    /*dostosowanie do tego by 0,1 rem był jak 1px*/
     font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+    /*dostosowanie do tego by 0,1 rem był jak 1px*/
     body {
-        background-color: $colorBackGround;
+        background-color: $colorBackgroung;
     }
 }
 
@@ -19,7 +22,7 @@ img {
 }
 
 button {
-        border: none;
-        background: none;
-        text-shadow: none;
-    }
+    border: none;
+    background: none;
+    text-shadow: none;
+}
