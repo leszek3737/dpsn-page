@@ -1,4 +1,3 @@
-'use strict';
 const config = require('./config');
 const runSequence = require('run-sequence');
 module.exports = gulp => {

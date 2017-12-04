@@ -1,4 +1,3 @@
-'use strict';
 const browsersync = require('browser-sync').create();
 const config = require('./config');
 module.exports = gulp => {

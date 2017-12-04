@@ -1,4 +1,3 @@
-'use strict';
 const $ = require('gulp-load-plugins')();
 const config = require('./config');
 module.exports = gulp => {
@@ -6,8 +5,8 @@ module.exports = gulp => {
         return gulp.src(config.glob.html)
             .pipe($.htmlReplace({
                 "css": "css/app.css",
-                "js": "js/assets.js",
-                "js2": "js/app.js"
+                "jsLib": "js/assets.min.js",
+                "js": "js/app.js"
             }))
             .pipe(gulp.dest(config.path.dist));
     });
@@ -15,8 +14,8 @@ module.exports = gulp => {
         return gulp.src(config.glob.html)
             .pipe($.htmlReplace({
                 "css": "css/app.min.css",
-                "js": "js/assets.js",
-                "js2": "js/app.min.js"
+                "jsLib": "js/assets.min.js",
+                "js": "js/app.min.js"
             }))
             .pipe($.stripComments())
             .pipe(gulp.dest(config.path.dist));
