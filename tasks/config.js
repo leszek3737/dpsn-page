@@ -5,6 +5,7 @@ module.exports = {
         js: './src/**/*.js',
         html: './src/**/*.html',
         fonts: './src/fonts/**/*',
+        fontsLib: './node_modules/bootstrap-sass/assets/fonts/bootstrap/**/*',
         img: './src/img/**/*',
     },
     entryPoint: {
@@ -15,6 +16,7 @@ module.exports = {
         js: './dist/js/',
         dist: './dist/',
         fonts: './dist/fonts/',
+        fontsLib: './dist/fonts/bootstrap/',
         vector: './dist/img/',
         img: './dist/img/',
     },

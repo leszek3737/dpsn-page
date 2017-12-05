@@ -9,11 +9,16 @@ module.exports = gulp => {
         return gulp.src(config.glob.fonts)
             .pipe(gulp.dest(config.path.fonts));
     });
+    gulp.task('copyFontsLib', () => {
+        return gulp.src(config.glob.fontsLib)
+            .pipe(gulp.dest(config.path.fontsLib));
+    });
 
     gulp.task('copy', done => {
         runSequence(
             'copyImg',
             'copyFonts',
+            'copyFontsLib',
             done
         );
     });
@@ -21,6 +26,7 @@ module.exports = gulp => {
         runSequence(
             'copyMinImg::prod',
             'copyFonts',
+            'copyFontsLib',
             done
         );
     });
