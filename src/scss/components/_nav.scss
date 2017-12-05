@@ -22,15 +22,24 @@
             }
         }
         &__nav {
+            position: relative;
+            margin-bottom: 20px;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                background: $colorMenu;
+                width: 90%;
+                height: 95%;
+                transform: translateX(-10px) translateY(-20px) skewY(3deg);
+                border: 3px {
+                    color: black;
+                }
+            }
+
             &__ul--search {
                 margin-bottom: 50px;
             }
-
-            position: absolute;
-            background: white;
-            width: 100%;
-            height: 100%;
-
         }
     }
 
