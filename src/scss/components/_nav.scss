@@ -1,3 +1,25 @@
+.navMain__menu__logo {
+    padding: 0;
+    &__img {
+        width: $logoSizeXS;
+    }
+}
+
+.navMain__changeLetters {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    &--button {
+        font: {
+            family: $mainFont;
+            size: 22px;
+            weight: 900;
+        }
+        transform: translatey(-40px);
+        color: $colorChangeLetters;
+    }
+}
+
 //.navbar-default {
 //    background: none;
 //    border: none;
@@ -60,19 +82,7 @@
 //    overflow-y: hidden;
 //}
 //
-//.changeLetters {
-//    display: flex;
-//    justify-content: center;
-//    height: 50px;
-//    button {
-//        font: {
-//            family: $mainFont;
-//            size: 22px;
-//            weight: 900;
-//        }
-//        transform: translatey(-40px);
-//        color: $colorChangeLetters;
-//    }
+
 //}
 //
 //.reducingLatters {

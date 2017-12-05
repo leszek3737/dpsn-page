@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="utf-8">
     <title>Dom pomocy społecnej</title>
@@ -7,9 +8,13 @@
     <!-- build:css -->
     <!-- endbuild -->
 </head>
+
 <body>
     <nav class="navMain navbar navbar-default">
         <div class="navMain__menu container-fluid">
+            <a class="navbar-brand navMain__menu__logo" href="#">
+                <img src="/img/dpslogo4.svg" class="navMain__menu__logo__img">
+            </a>
             <button type="button" class="navMain__menu__hamburger navbar-toggle hamburger" data-toggle="collapse" data-target=".menu-z" aria-expanded="false">
                 <span class="icon-bar">
                 </span>
@@ -108,10 +113,10 @@
                 </form>
             </div>
         </div>
-        <div class="navMain__changeLetters container-fluid changeLetters">
+        <div class="navMain__changeLetters container-fluid">
             <div class="navbar-header navbar-right">
-                <button type="button" class="navMain__changeLetters__increase btn btn-default navbar-btn">A +</button>
-                <button type="button" class="navMain__changeLetters__reducing btn btn-default navbar-btn">A -</button>
+                <button type="button" class="navMain__changeLetters__increase navMain__changeLetters--button btn-default">A +</button>
+                <button type="button" class="navMain__changeLetters__reducing navMain__changeLetters--button btn-default">A -</button>
             </div>
         </div>
     </nav>
@@ -195,4 +200,5 @@
     <!-- build:js -->
     <!-- endbuild -->
 </body>
+
 </html>
