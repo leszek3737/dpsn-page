@@ -37,8 +37,26 @@
                 }
             }
 
-            &__ul--search {
-                margin-bottom: 50px;
+            &__ul {
+                &--search {
+                    margin-bottom: 50px;
+                }
+                &__li {
+                    &--dropdown {
+                        &--toggle {
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                width: 0;
+                                height: 0;
+                                border-left: 5px solid transparent;
+                                border-right: 5px solid transparent;
+                                border-top: 5px solid #000;
+                                transform: translateY(7px) translateX(3px);
+                            }
+                        }
+                    }
+                }
             }
         }
     }
