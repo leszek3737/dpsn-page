@@ -35,13 +35,24 @@
             }
             transform: translatey(-40px);
             color: $colorChangeLetters;
-            &.navMain__changeLetters__reducing{
+            &.navMain__changeLetters__reducing {
                 font-size: 16px;
                 transform: translateY(-43px);
             }
         }
     }
 
+    &--search {
+        background: 0;
+        margin: 15px;
+        width: 80%;
+        float: left;
+        margin-bottom: 50px;
+        button {
+            float: right;
+
+        }
+    }
 }
 
 
