@@ -1,24 +1,49 @@
-.navMain__menu__logo {
-    padding: 0;
-    &__img {
-        width: $logoSizeXS;
+.navMain {
+    &__menu {
+        &__logo {
+            padding: 0;
+            padding-left: 40px;
+            &__img {
+                width: $logoSizeXS;
+            }
+        }
+        &__hamburger {
+            padding: 5px;
+            margin: {
+                right: 65px;
+                top: 17px;
+            }
+            & .navMain__menu__hamburger--span {
+                width: 30px;
+
+                & + .navMain__menu__hamburger--span {
+                    margin-top: 6px;
+                }
+            }
+        }
     }
+
+    &__changeLetters {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        &--button {
+            font: {
+                family: $mainFont;
+                size: 22px;
+                weight: 900;
+            }
+            transform: translatey(-40px);
+            color: $colorChangeLetters;
+            &.navMain__changeLetters__reducing{
+                font-size: 16px;
+                transform: translateY(-43px);
+            }
+        }
+    }
+
 }
 
-.navMain__changeLetters {
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    &--button {
-        font: {
-            family: $mainFont;
-            size: 22px;
-            weight: 900;
-        }
-        transform: translatey(-40px);
-        color: $colorChangeLetters;
-    }
-}
 
 //.navbar-default {
 //    background: none;
@@ -82,11 +107,9 @@
 //    overflow-y: hidden;
 //}
 //
-
 //}
 //
-//.reducingLatters {
-//    font-size: 18px;
+//.
 //}
 //
 //.nav.navbar-nav.nav-main {
