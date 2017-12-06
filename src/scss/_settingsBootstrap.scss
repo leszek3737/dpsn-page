@@ -362,7 +362,7 @@ $navbar-default-bg: transparent !default;
 $navbar-default-border: darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
-$navbar-default-link-color: #000 !default;
+$navbar-default-link-color: $colorDropMenu !default;
 $navbar-default-link-hover-color: #333 !default;
 $navbar-default-link-hover-bg: transparent !default;
 $navbar-default-link-active-color: #555 !default;
@@ -877,15 +877,11 @@ $hr-border: $gray-lighter !default;
 //@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
 //@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/wells";
 //@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/close";
-
-
-
 //// Components w/ JavaScript
 //@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals";
 //@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
 //@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
 //@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
-
 // Utility classes
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";

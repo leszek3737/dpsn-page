@@ -1,6 +1,3 @@
-//wczytanie bootstrapa
-@import 'settingsBootstrap';
-
 $colorBackgroung: #097046;
 $mainFont: 'Open Sans';
 $articleBackGround: #FFF;
@@ -13,9 +10,15 @@ $colorMenu: #E9E9E9;
 $colorChangeLetters: #E7E6E6;
 $menuBorderBottom: #000;
 $colorDropMenu: #000;
+
+//header
+$colorSiteTitle: #000;
 //footer
 $footerBackGround: #E9E9E9;
 
+//wczytanie bootstrapa
+@import 'settingsBootstrap';
+//wczytywanie ustawiń elementów strony
 @import 'layout/news';
 @import 'layout/about';
 @import 'components/header';
