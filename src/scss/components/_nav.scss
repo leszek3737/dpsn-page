@@ -33,14 +33,28 @@
                 position: absolute;
                 background: $colorMenu;
                 width: 90%;
-                height: 95%;
+                height: 100%;
                 transform: translateX(-10px) translateY(-20px) skewY(3deg);
             }
-
             &__ul {
                 &--search {
-                    margin-bottom: 50px;
-                    margin-left: 5px;
+                    margin: {
+                        top: 15px;
+                        bottom: 30px;
+                        left: 15px;
+                    }
+                    height: 30px;
+                    input {
+                        background: 0;
+
+                        width: 70%;
+                        float: left;
+                    }
+
+                    button {
+                        float: left;
+                        margin: 5px;
+                    }
                 }
                 &__li {
                     &--dropdown {
@@ -79,24 +93,47 @@
             }
         }
     }
-    &--search {
-        background: 0;
-        margin: 5px;
-        width: 70%;
-        float: left;
-        button {
-            float: right;
-            margin: 5px;
-        }
-    }
 }
 
 
-//@media all and(min-width: 768px) {
-//    .logo {
-//        img {
-//            height: $logoSizeSM;
-//            width: $logoSizeSM;
-//        }
-//    }
-//}
+@media all and(min-width: 768px) {
+    .navMain {
+        z-index: 2;
+        &__menu {
+            &__logo {
+                padding: 0;
+                padding-left: 40px;
+                &__img {
+                    height: $logoSizeSM;
+                    width: $logoSizeSM;
+                }
+            }
+            &__nav {
+                padding: 0;
+                &::before {
+                    display: none;
+                }
+            }
+            &--search {
+                &--form {
+                    width: 200px;
+                    padding: 0;
+                    &__div {
+                        > input.form-control {
+                            width: 60%;
+                            height: 20px;
+                            border: 0;
+                            background: 0;
+                            border-radius: 0;
+                            border-bottom: 1px solid black;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+    }
+}
