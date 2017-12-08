@@ -42,3 +42,16 @@
         }
     }
 }
+
+@media all and(min-width: 768px) {
+    .news {
+        position: relative;
+        &__row {
+            margin-bottom: 70px;
+            &__div {
+                margin-top: 40px;
+
+            }
+        }
+    }
+}
