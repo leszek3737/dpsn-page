@@ -1,14 +1,26 @@
-$colorBackGround: #097046;
-$mainFont: "Open Sans";
-$articleBackGround: #ffffff;
+$colorBackgroung: #097046;
+$mainFont: 'Open Sans';
+$articleBackGround: #FFF;
 //nav
 $logoSizeXS: 75px;
 $logoSizeSM: 150px;
-$logoBackGround: #094041;
-$colorHamburer: #d1d1d1;
-$colorMenu: #e9e9e9; 
-$colorChangeLatters: #e7e6e6; 
-$menuBorderBottom: black;
-$colorDropMenu: black;
+$logoBackground: #094041;
+$colorHamburer: #D1D1D1;
+$colorMenu: #E9E9E9;
+$colorChangeLetters: #E7E6E6;
+$menuBorderBottom: #000;
+$colorDropMenu: #000;
+
+//header
+$colorSiteTitle: #000;
 //footer
-$footerBackGround: #e9e9e9;
+$footerBackGround: #E9E9E9;
+
+//wczytanie bootstrapa
+@import 'settingsBootstrap';
+//wczytywanie ustawiń elementów strony
+@import 'layout/news';
+@import 'layout/about';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/nav';
