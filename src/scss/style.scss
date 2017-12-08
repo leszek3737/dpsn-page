@@ -1,25 +1,21 @@
-@import "settings";
-@import "layout/news";
-@import "layout/about";
-@import "components/heder";
-@import "components/footer";
-@import "components/nav";
+//wczytanie ustawień i framework
+@import 'settings';
 
-html {
-    font-size: 62.5%; 
-    /*dostosowanie do tego by 0,1 rem był jak 1px*/
-    font-family: 'Open Sans', sans-serif;
-    body {
-        background-color: $colorBackGround;
-    }
-}
-
-img {
-    width: 200px;
-}
-
-button {
-        border: none;
-        background: none;
-        text-shadow: none;
-    }
+//html {
+//    font-family: 'Open Sans', sans-serif;
+//    font-size: 62.5%;
+//    /*dostosowanie do tego by 0,1 rem był jak 1px*/
+//    body {
+//        background-color: $colorBackgroung;
+//    }
+//}
+//
+//img {
+//    width: 200px;
+//}
+//
+//button {
+//    border: none;
+//    background: none;
+//    text-shadow: none;
+//}
