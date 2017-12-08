@@ -1,5 +1,6 @@
 .news {
     position: relative;
+
     &__row {
         margin-bottom: 70px;
         &__div {
@@ -50,8 +51,23 @@
             margin-bottom: 70px;
             &__div {
                 margin-top: 40px;
-
             }
+        }
+    }
+}
+
+@media all and(min-width: 992px) and (max-width: 1199px) {
+    .news__row__div {
+        &:nth-child(even) {
+            margin-top: 7%;
+        }
+    }
+}
+
+@media all and(min-width: 768px) and (max-width: 991px) {
+    .news__row__div {
+        &:nth-child(even) {
+            margin-top: 8%;
         }
     }
 }
