@@ -1,6 +1,5 @@
 .news {
     position: relative;
-
     &__row {
         margin-bottom: 70px;
         &__div {
@@ -12,7 +11,7 @@
                     width: 100%;
                 }
                 &::before {
-                    content: '';
+                    content: "";
                     position: absolute;
                     background: $articleBackGround;
                     width: 91.5%;
@@ -21,8 +20,8 @@
                     transform: skewY(3deg);
                 }
                 &--content {
-                    box-sizing: border-box;
                     margin: 2%;
+                    box-sizing: border-box;
                 }
             }
             &--readNext {
