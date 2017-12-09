@@ -71,3 +71,7 @@
         }
     }
 }
+
+@media all and(min-width: 1200px) {
+    @include newsRadius(1.4%);
+}

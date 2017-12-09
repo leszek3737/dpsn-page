@@ -1,0 +1,8 @@
+@mixin newsRadius($percent) {
+    @for $i from 1 through 4 {
+        $n: $i;
+        .news__row__div:nth-child(#{$n}) {
+            margin-top: ($n - 1) * $percent;
+        }
+    }
+}
