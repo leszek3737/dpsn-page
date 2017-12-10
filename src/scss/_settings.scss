@@ -15,11 +15,3 @@ $colorDropMenu: #000;
 $colorSiteTitle: #000;
 //footer
 $footerBackGround: #E9E9E9;
-//wczytanie bootstrapa
-@import 'settingsBootstrap';
-//wczytywanie ustawiń elementów strony
-@import 'layout/news';
-@import 'layout/about';
-@import 'components/header';
-@import 'components/footer';
-@import 'components/nav';
