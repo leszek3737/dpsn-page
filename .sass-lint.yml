@@ -22,7 +22,7 @@ rules:
   property-units:
     - 2
     -
-      per-property: { font-size: ['rem'] }
+      per-property: { font-size: ['rem'], size: ['rem'], }
   quotes:
     - 1
     -

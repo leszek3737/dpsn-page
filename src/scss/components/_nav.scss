@@ -79,13 +79,13 @@
         &--button {
             font: {
                 family: $mainFont;
-                size: 22px;
+                size: 2.2rem !important;
                 weight: 900;
             }
             transform: translatey(-40px);
             color: $colorChangeLetters;
             &.navMain__changeLetters__reducing {
-                font-size: 1.6rem;
+                font-size: 1.6rem !important;
                 transform: translateY(-43px);
             }
         }
@@ -139,11 +139,6 @@
             justify-content: center;
             height: 50px;
             &--button {
-                font: {
-                    family: $mainFont;
-                    size: 22px;
-                    weight: 900;
-                }
                 transform: translatey(-40px);
                 color: $colorChangeLetters;
                 &.navMain__changeLetters__reducing {

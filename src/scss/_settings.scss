@@ -16,3 +16,9 @@ $colorSiteTitle: #000;
 //footer
 $footerBackGround: #E9E9E9;
 @include h-size;
+body,
+.dropdown-menu,
+button,
+.form-control {
+    font-size: 1.4rem !important;
+}
