@@ -85,7 +85,7 @@
             transform: translatey(-40px);
             color: $colorChangeLetters;
             &.navMain__changeLetters__reducing {
-                font-size: 16px;
+                font-size: 1.6rem;
                 transform: translateY(-43px);
             }
         }
@@ -115,14 +115,16 @@
                     width: 200px;
                     padding: 0;
                     &__div {
-                        > input.form-control {
-                            width: 60%;
-                            height: 20px;
-                            border: 0;
-                            background: 0;
-                            border-radius: 0;
-                            border-bottom: 1px solid black;
-                            box-shadow: none;
+                        > input {
+                            .form-control {
+                                width: 60%;
+                                height: 20px;
+                                border: 0;
+                                background: 0;
+                                border-radius: 0;
+                                border-bottom: 1px solid #000000;
+                                box-shadow: none;
+                            }
                         }
                     }
                 }
@@ -145,7 +147,7 @@
                 transform: translatey(-40px);
                 color: $colorChangeLetters;
                 &.navMain__changeLetters__reducing {
-                    font-size: 16px;
+                    font-size: 1.6rem;
                     transform: translateY(-43px);
                 }
             }
