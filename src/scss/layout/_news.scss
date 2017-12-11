@@ -7,7 +7,7 @@
                 padding: 2%;
                 &--title {
                     padding-top: 2%;
-                    border-bottom: 1px solid #000000;
+                    border-bottom: 1px solid black;
                     width: 100%;
                 }
                 &::before {
@@ -32,8 +32,8 @@
                     transform: translateX(-20px);
                     background: none;
                     text-align: right;
-                    border: 0;
-                    border-bottom: 1px solid #000000;
+                    border: none;
+                    border-bottom: 1px solid black;
                 }
             }
             & + .news__row__div {
