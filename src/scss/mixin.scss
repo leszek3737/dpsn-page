@@ -12,7 +12,8 @@
 @mixin h-size {
     @for $i from 1 through 6 {
         h#{$i} {
-            font-size: 4.2rem - (0.6 * $i) !important;
+            font-size: 4.2rem - (0.6 * $i);
         }
+
     }
 }

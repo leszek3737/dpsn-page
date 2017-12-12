@@ -13,6 +13,7 @@ rules:
   no-debug: 1
   no-warn: 0
   no-ids: 2
+  no-important: 2
   no-empty-rulesets:
     - 1 
   force-element-nesting: 1
