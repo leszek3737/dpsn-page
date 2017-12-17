@@ -1,0 +1,35 @@
+options:
+  merge-default-rules: false
+  formatter: html
+  output-file: 'raports/sass-lint.html'
+  max-warnings: 10
+rules:
+  placeholder-in-extend: 0
+  mixins-before-declarations:
+  - 1
+  -
+    exclude: ['grid-media', 'media']
+  no-color-keywords: 1
+  no-debug: 1
+  no-warn: 0
+  no-ids: 2
+  no-important: 2
+  no-empty-rulesets:
+    - 1 
+  force-element-nesting: 1
+  force-pseudo-nesting: 1
+  attribute-quotes: 1
+  border-zero: 1
+  property-units:
+    - 2
+    -
+      per-property: { font-size: ['rem'], size: ['rem'], }
+  quotes:
+    - 1
+    -
+      style: double
+  no-misspelled-properties:
+  - 1
+  -
+    'extra-properties':
+    - '-webkit-overflow-scrolling'

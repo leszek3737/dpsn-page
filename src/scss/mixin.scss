@@ -1,8 +1,19 @@
 @mixin newsRadius($percent) {
     @for $i from 1 through 4 {
         $n: $i;
-        .news__row__div:nth-child(#{$n}) {
-            margin-top: ($n - 1) * $percent;
+        .news__row__div {
+            &:nth-child(#{$n}) {
+                margin-top: ($n - 1) * $percent;
+            }
         }
+    }
+}
+
+@mixin h-size {
+    @for $i from 1 through 6 {
+        h#{$i} {
+            font-size: 4.2rem - (0.6 * $i);
+        }
+
     }
 }

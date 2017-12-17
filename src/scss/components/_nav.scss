@@ -45,7 +45,6 @@
                     height: 30px;
                     input {
                         background: 0;
-
                         width: 70%;
                         float: left;
                     }
@@ -80,13 +79,13 @@
         &--button {
             font: {
                 family: $mainFont;
-                size: 22px;
+                size: 2.2rem;
                 weight: 900;
             }
             transform: translatey(-40px);
             color: $colorChangeLetters;
             &.navMain__changeLetters__reducing {
-                font-size: 16px;
+                font-size: 1.6rem;
                 transform: translateY(-43px);
             }
         }
@@ -116,14 +115,16 @@
                     width: 200px;
                     padding: 0;
                     &__div {
-                        > input.form-control {
-                            width: 60%;
-                            height: 20px;
-                            border: 0;
-                            background: 0;
-                            border-radius: 0;
-                            border-bottom: 1px solid black;
-                            box-shadow: none;
+                        > input {
+                            &.form-control {
+                                width: 60%;
+                                height: 20px;
+                                border: 0;
+                                background: 0;
+                                border-radius: 0;
+                                border-bottom: 1px solid #000;
+                                box-shadow: none;
+                            }
                         }
                     }
                 }
@@ -138,15 +139,10 @@
             justify-content: center;
             height: 50px;
             &--button {
-                font: {
-                    family: $mainFont;
-                    size: 22px;
-                    weight: 900;
-                }
                 transform: translatey(-40px);
                 color: $colorChangeLetters;
                 &.navMain__changeLetters__reducing {
-                    font-size: 16px;
+                    font-size: 1.6rem;
                     transform: translateY(-43px);
                 }
             }

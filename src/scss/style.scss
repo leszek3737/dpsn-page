@@ -1,9 +1,9 @@
 //wczytanie ustawień 
-@import 'settings';
+@import "settings";
 @import "mixin.scss";
 
 //wczytanie bootstrapa
-@import 'settingsBootstrap';
+@import "settingsBootstrap";
 // Core mixins
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 // Reset and dependencies
@@ -29,10 +29,10 @@
 // Utility classes
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
-
 //wczytywanie ustawiń elementów strony
-@import 'layout/news';
-@import 'layout/about';
-@import 'components/header';
-@import 'components/footer';
-@import 'components/nav';
+@import "layout/news";
+@import "layout/about";
+@import "components/header";
+@import "components/footer";
+@import "components/nav";
+@import "base";
